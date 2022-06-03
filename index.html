@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>jsB1-hw-kimhang</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container form-group" style="margin-top: 40px;">
+        <!--  Bài 1: Tính tiền lương nhân viên -->
+        <div class="bai1" style="margin-top: 10px;">
+            <h3>Bài 1: Tính tiền lương nhân viên</h3>
+            <div class="alert alert-success">
+                <p><b>INPUT:</b> luongNgay, soNgayLam</p>
+                <p><b>OUTPUT:</b> soTienLuong</p>
+                <p><b>PROGRESS:</b> soTienLuong = luongNgay * soNgayLam</p>
+            </div>
+            <div class="form-group w-25">
+                <p>Lương một ngày ($)</p>
+                <input id="luongNgay" class="form-control" value="100000" disabled>
+            </div>
+            <div class="form-group w-25">
+                <p>Số ngày làm</p>
+                <input id="soNgayLam" class="form-control">
+            </div>
+            <button id="btnTinhTien" class="btn btn-success" style="margin-bottom: 15px;">Tính tiền</button>
+            <div id="ketQua">
+                <p>Số tiền lương của nhân viên này là:</p>
+                <h3 id="soTienLuong">N/A</h3>
+            </div>
+        </div>
+
+        <hr>
+        <!--  Bài 2: Tính giá trị trung bình -->
+        <div class="bai2" style="margin-top: 25px;">
+            <h3>Bài 2: Tính giá trị trung bình</h3>
+            <div class="alert alert-warning">
+                <p><b>INPUT:</b> number1, number2, number3, number4, number5</p>
+                <p><b>OUTPUT:</b> giaTriTrungBinh</p>
+                <p><b>PROGRESS:</b> giaTriTrungBinh = (number1 + number2 + number3 + number4 +number5) / 5 </p>
+            </div>
+            <div class="form-group w-25">
+                <p class="md-2">Vui lòng nhập 5 số thực</p>
+                <input id="number1" class="form-control" style="margin-bottom: 5px;">
+                <input id="number2" class="form-control" style="margin-bottom: 5px;">
+                <input id="number3" class="form-control" style="margin-bottom: 5px;">
+                <input id="number4" class="form-control" style="margin-bottom: 5px;">
+                <input id="number5" class="form-control" style="margin-bottom: 5px;">
+            </div>
+            <button id="btnTinhTB" class="btn btn-warning" style="margin-bottom: 15px;">Tính trung bình</button>
+            <div id="ketQua">
+                <p>Giá trị trung bình của 5 số trên là:</p>
+                <h3 id="ketQuaTB">N/A</h3>
+            </div>
+        </div>
+
+        <hr>
+        <!--  Bài 3: Quy đổi tiền -->
+        <div class="bai3" style="margin-top: 10px;">
+            <h3>Bài 3: Quy đổi tiền</h3>
+            <div class="alert alert-info">
+                <p><b>INPUT:</b> tyGia, soTienUSD</p>
+                <p><b>OUTPUT:</b> soTienVND</p>
+                <p><b>PROGRESS:</b> soTienVND = tyGia * soTienUSD</p>
+            </div>
+            <div class="form-group w-25">
+                <p>Tỷ giá quy đổi</p>
+                <input id="tyGia" class="form-control" value="23500" disabled>
+            </div>
+            <div class="form-group w-25">
+                <p>Số tiền USD</p>
+                <input id="soTienUSD" class="form-control">
+            </div>
+            <button id="btnQuyDoi" class="btn btn-info" style="margin-bottom: 15px;">Quy đổi</button>
+            <div id="ketQua">
+                <p>Số tiền VND sau quy đổi là:</p>
+                <h3 id="soTienVND">N/A</h3>
+            </div>
+        </div>
+
+        <hr>
+        <!--  Bài 4: Tính diện tích, chu vi hình chữ nhật -->
+        <div class="bai4" style="margin-top: 10px;">
+            <h3>Bài 4: Tính diện tích, chu vi hình chữ nhật</h3>
+            <div class="alert alert-secondary">
+                <p><b>INPUT:</b> chieuDai, chieuRong</p>
+                <p><b>OUTPUT:</b> dienTich, chuVi</p>
+                <p><b>PROGRESS:</b> dienTich = chieuDai * chieuRong; chuVi = (chieuDai + chieuRong) * 2</p>
+            </div>
+            <div class="form-group w-25">
+                <p>Vui lòng nhập chiều dài</p>
+                <input id="chieuDai" class="form-control">
+            </div>
+            <div class="form-group w-25">
+                <p>Vui lòng nhập chiều rộng</p>
+                <input id="chieuRong" class="form-control">
+            </div>
+            <button id="btnTinhToan" class="btn btn-secondary" style="margin-bottom: 15px;">Tính toán</button>
+            <div id="ketQuaDienTich">
+                <p>Diện tích của hình chữ nhật là:</p>
+                <h3 id="dienTich">N/A</h3>
+            </div>
+            <div id="ketQuaChuVi">
+                <p>Chu vi của hình chữ nhật là:</p>
+                <h3 id="chuVi">N/A</h3>
+            </div>
+        </div>
+
+        <hr>
+        <!-- Bài 5: Tính tổng 2 ký số -->
+        <div class="bai5" style="margin-top: 10px;">
+            <h3>Bài 5: Tính tổng 2 ký số</h3>
+            <div class="alert alert-danger">
+                <p><b>INPUT:</b> number, chuSoHangChuc, chuSoHangDonVi</p>
+                <p><b>OUTPUT:</b> tong2KySo</p>
+                <p><b>PROGRESS:</b> tong2KySo = chuSoHangChuc + chuSoHangDonVi</p>
+            </div>
+            <div class="form-group w-25">
+                <p>Vui lòng nhập một số có 2 chữ số</p>
+                <input id="number" class="form-control">
+            </div>
+            <button id="btnTinhTong" class="btn btn-danger" style="margin-bottom: 15px">Tính tổng</button>
+            <div class=" ketQuaTinhTong">
+                <p>Tổng của 2 ký số trên là:</p>
+                <h3 id="tong">N/A</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
